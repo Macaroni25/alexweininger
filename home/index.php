@@ -8,7 +8,7 @@
     <title>Home</title>
 
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="..bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="css/styles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
