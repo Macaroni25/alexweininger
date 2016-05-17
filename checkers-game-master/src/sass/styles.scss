@@ -1,0 +1,61 @@
+@import "reset";
+@import "config";
+
+body {
+	font: normal 10px/1.3 georgia, serif;
+	color: #333;
+}
+
+strong {
+	font-weight: bold;
+}
+
+#game-stage {
+	h1 {
+		font-size: 4em;
+		text-align: center;
+	}
+}
+
+.board {
+	width: 560px;
+	margin: 0 auto 10px;
+}
+
+.board__square {
+	display: inline-block;
+	vertical-align: top;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	font-size: 2em;
+
+	&.light { background: $light; }
+	&.dark { background: $dark; }
+}
+
+.board__piece {
+	display: block;
+	width: 80%;
+	height: 80%;
+	margin: 10% 0 0 10%;
+	border-radius: 100%;
+	box-sizing: border-box;
+
+	&.king {
+		background: url(../img/icon-crown.png) center no-repeat;
+	}
+
+	&.player-one { background-color: $playerOne; }
+	&.player-two { background-color: $playerTwo; }
+
+	&.selected {
+		border: 1px solid #000;
+		box-shadow: 0 0 15px 5px #000;
+	}
+}
+
+.score {
+	font-size: 1.6em;
+	text-align: center;
+}
